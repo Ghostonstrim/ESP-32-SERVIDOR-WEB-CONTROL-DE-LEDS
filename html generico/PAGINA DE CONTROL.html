@@ -1,0 +1,73 @@
+String pagina = "<!DOCTYPE html>"
+"<html>"
+"<head>"
+<link rel="stylesheet" href="style.css">
+"<meta charset='utf-8' />"
+"<title>Servidor Web ESP32</title>"
+"</head>"
+"<body>"
+
+"<h1>Servidor Web ESP32</h1>"
+
+<h2>Foco Verde</h2>
+"<p><a href='/onV'><button class="btn green">ON</button></a></p>"
+"<p><a href='/offV'><button class= "btn green">OFF</button></a></p>"
+<div></div>
+<h2>Foco Blanco</h2>
+"<p><a href='/onB'><button class = "btn white">ON</button></a></p>"
+"<p><a href='/offB'><button class = "btn white">OFF</button></a></p>"
+<div></div>
+<h2>Foco Rojo</h2>
+"<p><a href='/onR'><button class ="btn red" >ON</button></a></p>"
+"<p><a href='/offR'><button class ="btn red">OFF</button></a></p>"
+<div></div>
+<h2>Foco Amarillo</h2>
+"<p><a href='/onA'><button class="btn yellow">ON</button></a></p>"
+"<p><a href='/offA'><button class = "btn yellow">OFF</button></a></p>"
+
+<style>
+    body {
+    background: rgb(134, 228, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btn {
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    height:50px;
+    width:100px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.yellow {
+
+    background-color: rgb(253, 237, 8);
+ 
+}
+
+.green{
+    background-color: chartreuse;
+}
+
+
+.red{
+    background-color: crimson;
+}
+
+.white{
+    background-color: cornsilk;
+    color: black;
+}
+
+.btn:focus {
+    opacity: 0.5;
+}
+</style>
+"</body>"
+"</html>";
+                
